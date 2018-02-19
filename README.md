@@ -7,7 +7,7 @@ To serve as a proof of concept, I gathered data of a little of under 300,000 sof
 ## How do you use Find my Geek?
 The core functionality of Find my Geek is allowing users to select a repository to get suggestions:
 
-![fmg1]()(fmg1.png)
+![fmg1](fmg1.png)
 
 Afterwards a list of recommended developers is presented:
 
