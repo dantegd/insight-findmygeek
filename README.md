@@ -24,11 +24,11 @@ Unlike a traditional, filter based, recommendation system that would make recomm
 
 From the commit information, Find my Geek calculates features per developer that serve as proxies of the “expertise” of each developer by counting the number of lines of code they added and deleted and the number of files added per computer language:
 
-![fmg1](fmg5.png)
+![fmg1](fmg6.png)
 
 Similarly, for the “technical needs” of the repository, a proxy metric was developer based on the number of files per computer language:
 
-![fmg1](fmg6.png)
+![fmg1](fmg7.png)
 
 Then Find my Geek uses a hybrid, matrix factorization method called [lightfm] that uses the developer and repository features as metadata to create latent vectors and make recommendations. It estimates a latent vector per each metadata feature and user (repository), which allows to perform any type of recommendation (user-user, item-user, item-item). Lightfm also has the added advantaged of being implemented in multithreaded (openMP) cython code, which made it a great option for a project that was developed in pretty much 2 weeks.
 
@@ -37,7 +37,7 @@ Then Find my Geek uses a hybrid, matrix factorization method called [lightfm] th
 
 Find my Geek was implemented with a modular, layered, extendable architecture that allowed me to quickly prototype other recommendation algorithms. The architecture can be seen in the following image:
 
-![fmg1](fmg7.png)
+![fmg1](fmg5.png)
 
 ## Why did I build Find my Geek?
 Besides my personal goal of learning and implementing a recommendation system for the first time, two other reasons drove me to implement Find my Geek:
